@@ -18,7 +18,7 @@
 
     $novoSalario = $salario + $comissao;
 
-    echo 'Novo salário ', $novoSalario
+    echo 'Novo salário ', $novoSalario;
     ?>
 </body>
 
