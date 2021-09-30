@@ -34,3 +34,11 @@ $alunos = [
 ];
 
 echo $alunos[20215487];
+
+echo ("<br>");
+
+echo ("<h2>Exercício 1</h2>");
+
+$estados = array("Paraíba", "Pernambuco", "Ceará", "Rio de Janeiro", "São Paulo");
+
+echo ($estados[3]);
