@@ -1,9 +1,3 @@
 <?php
-
-// Estrutura de repetição com variável de controle (for)
-$limite = 50;
-for ($i = 50; $i >= 1; $i -= 2) {
-    echo "$i - Adoro a Linguagem Python! <br>";
-}
-
-echo "Fim da aplicação <br>";
+echo "while -> estrutura de repetição com condição no início do laço <br>";
+echo "do while -> estrutura de repetição com condição final do laço";
