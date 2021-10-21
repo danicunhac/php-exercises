@@ -34,7 +34,7 @@
   $value = (float) $_POST["value"];
 
   $data = [
-    1 => 0,
+    1 => 20,
     6 => 3,
     12 => 6,
     18 => 9,
@@ -54,7 +54,10 @@
       <th>Valor Parcela</th>
     </tr>
     <?php foreach ($data as $quota => $percentage) :
-      $calc = ($value + ($value * $percentage) / 100)
+      if ($quota == 1)
+        $calc = ($value - ($value * $percentage) / 100);
+      else
+        $calc = ($value + ($value * $percentage) / 100);
     ?>
       <tr>
         <td><?= number_format($calc, 2) ?></td>
