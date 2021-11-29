@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>Início | Cadastro de Alunos</title>
 </head>
 
 <body class="columns">
   <section class="section">
     <h1 class="title">Cadastro de Aluno</h1>
-    <form class="form" action="students.php" method="post">
+    <form class="form" id="form" action="students.php" method="post">
       <?php
       $fields = [
         'name' => ['label' => 'Nome', 'type' => 'text', 'placeholder' => 'Rogério'],
@@ -31,10 +32,11 @@
       }
       ?>
       <div class="control">
-        <button class="button is-primary has-text-black-ter" type="submit">Cadastrar</button>
+        <button id="button" class="button is-primary has-text-black-ter" type="submit">Cadastrar</button>
       </div>
     </form>
   </section>
+  <script src="validation.js"></script>
 </body>
 
 </html>
